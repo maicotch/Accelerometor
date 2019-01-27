@@ -14,6 +14,10 @@
 		C99DBEEF21FD465600C8AB5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99DBEED21FD465600C8AB5F /* LaunchScreen.storyboard */; };
 		C99DBEFA21FD465600C8AB5F /* AccelerometorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DBEF921FD465600C8AB5F /* AccelerometorTests.swift */; };
 		C99DBF0521FD465600C8AB5F /* AccelerometorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DBF0421FD465600C8AB5F /* AccelerometorUITests.swift */; };
+		C99DBF1521FD473D00C8AB5F /* awa.png in Resources */ = {isa = PBXBuildFile; fileRef = C99DBF1321FD473D00C8AB5F /* awa.png */; };
+		C99DBF1621FD473D00C8AB5F /* suiheiki.png in Resources */ = {isa = PBXBuildFile; fileRef = C99DBF1421FD473D00C8AB5F /* suiheiki.png */; };
+		C99DBF1821FD4C2A00C8AB5F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DBF1721FD4C2A00C8AB5F /* GameViewController.swift */; };
+		C99DBF1A21FD4C5C00C8AB5F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DBF1921FD4C5C00C8AB5F /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		C99DBF0021FD465600C8AB5F /* AccelerometorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99DBF0421FD465600C8AB5F /* AccelerometorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometorUITests.swift; sourceTree = "<group>"; };
 		C99DBF0621FD465600C8AB5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99DBF1321FD473D00C8AB5F /* awa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awa.png; sourceTree = "<group>"; };
+		C99DBF1421FD473D00C8AB5F /* suiheiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suiheiki.png; sourceTree = "<group>"; };
+		C99DBF1721FD4C2A00C8AB5F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C99DBF1921FD4C5C00C8AB5F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,15 @@
 		C99DBEE321FD465400C8AB5F /* Accelerometor */ = {
 			isa = PBXGroup;
 			children = (
+				C99DBF1221FD473D00C8AB5F /* 13_Resource */,
 				C99DBEE421FD465400C8AB5F /* AppDelegate.swift */,
 				C99DBEE621FD465400C8AB5F /* ViewController.swift */,
 				C99DBEE821FD465400C8AB5F /* Main.storyboard */,
 				C99DBEEB21FD465600C8AB5F /* Assets.xcassets */,
 				C99DBEED21FD465600C8AB5F /* LaunchScreen.storyboard */,
 				C99DBEF021FD465600C8AB5F /* Info.plist */,
+				C99DBF1721FD4C2A00C8AB5F /* GameViewController.swift */,
+				C99DBF1921FD4C5C00C8AB5F /* ResultViewController.swift */,
 			);
 			path = Accelerometor;
 			sourceTree = "<group>";
@@ -123,6 +134,15 @@
 				C99DBF0621FD465600C8AB5F /* Info.plist */,
 			);
 			path = AccelerometorUITests;
+			sourceTree = "<group>";
+		};
+		C99DBF1221FD473D00C8AB5F /* 13_Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C99DBF1321FD473D00C8AB5F /* awa.png */,
+				C99DBF1421FD473D00C8AB5F /* suiheiki.png */,
+			);
+			path = 13_Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +251,9 @@
 			files = (
 				C99DBEEF21FD465600C8AB5F /* LaunchScreen.storyboard in Resources */,
 				C99DBEEC21FD465600C8AB5F /* Assets.xcassets in Resources */,
+				C99DBF1621FD473D00C8AB5F /* suiheiki.png in Resources */,
 				C99DBEEA21FD465400C8AB5F /* Main.storyboard in Resources */,
+				C99DBF1521FD473D00C8AB5F /* awa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +279,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99DBEE721FD465400C8AB5F /* ViewController.swift in Sources */,
+				C99DBF1821FD4C2A00C8AB5F /* GameViewController.swift in Sources */,
 				C99DBEE521FD465400C8AB5F /* AppDelegate.swift in Sources */,
+				C99DBF1A21FD4C5C00C8AB5F /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,15 +457,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH49LNN572;
 				INFOPLIST_FILE = Accelerometor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Accelerometor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Accelerometormaiko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,15 +475,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CH49LNN572;
 				INFOPLIST_FILE = Accelerometor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Accelerometor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.Accelerometormaiko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
